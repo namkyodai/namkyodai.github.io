@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asset Management | </title>
+    <link>/tags/asset-management/</link>
+      <atom:link href="/tags/asset-management/index.xml" rel="self" type="application/rss+xml" />
+    <description>Asset Management</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sat, 19 Oct 2019 11:08:22 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Asset Management</title>
+      <link>/tags/asset-management/</link>
+    </image>
+    
+    <item>
+      <title>Lamesa 2 - Maynilad</title>
+      <link>/project/2016-lamesa2/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/project/2016-lamesa2/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: &lt;a href=&#34;http://www.mayniladwater.com.ph/&#34;&gt;Maynilad Water Services Inc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: Rehabilitation, Retrofitting and Process Improvement of Lamesa 2 Water Treatment Plant&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Asset Management, Process Improvement, Retrofitting, Rehabilitation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scale&lt;/strong&gt;: 900 MLD&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Timeline&lt;/strong&gt;: Engineering (Jun/2016-Dec/2016), Procurement and Bidding (Aug/2016-Sep/2017), Construction (Oct/2017 onward)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgrade the existing Pulsator WTP (900MLD) to cope with
+&lt;ul&gt;
+&lt;li&gt;High turbidity events in raining seasons (e.g. NTU up to 2000);&lt;/li&gt;
+&lt;li&gt;Slow performance of Sludge Extraction System under high turbidity events;&lt;/li&gt;
+&lt;li&gt;Rapidlly deterioration and corrosion of structures and assets;&lt;/li&gt;
+&lt;li&gt;7.2 magnitute of earthquake.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Provide better integration and connectivity with the Lamesa 1 Water Treatment Plant (1200 MLD) and the Sludge Treatment Facility (STF) being designed and constructed by JFE Contractor.&lt;/li&gt;
+&lt;li&gt;Provide fully Automation and integration (e.g. SCADA)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;roles-and-responsibilities&#34;&gt;Roles and Responsibilities&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Project Management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lesson-learned&#34;&gt;Lesson Learned&lt;/h2&gt;
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plant Audit - Maynilad</title>
+      <link>/project/2018-plantaudit/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/project/2018-plantaudit/</guid>
+      <description>&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: &lt;a href=&#34;http://www.mayniladwater.com.ph/&#34;&gt;Maynilad Water Services Inc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: Plant Audit of Various Pump Stations and Reservoirs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Asset Management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;objectives&#34;&gt;Objectives&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual Inspection and Testing on mechanical assets (e.g. pump, piping, valves) and electrical assets (e.g. GENSETs, transformers, MCC, Motors) using developed set condition states and standards;&lt;/li&gt;
+&lt;li&gt;Energy Audit;&lt;/li&gt;
+&lt;li&gt;FDAS and WEM studies;&lt;/li&gt;
+&lt;li&gt;Determination of optimal 5 years intervention program;&lt;/li&gt;
+&lt;li&gt;Life cycle cost analysis and estimation of Return on Investment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;responsibilities&#34;&gt;Responsibilities&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Record inspection and testing data in a centralized relational database system (MySQL);&lt;/li&gt;
+&lt;li&gt;Big data analysis and data solutions on 5-10 years operation data to detect trend and reliability of the system;&lt;/li&gt;
+&lt;li&gt;Investigation of current design and operational scheme using qualitative reliability analysis (e.g. FMEA);&lt;/li&gt;
+&lt;li&gt;Weibull Analysis and Faul Tree Analysis to estimate reliability;&lt;/li&gt;
+&lt;li&gt;Development of a Life Cycle Cost model using reliability concept to determine optimal intervention strategies and program;&lt;/li&gt;
+&lt;li&gt;Organizing a series of training and technical workshops on reliability study and modelling used in the project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lesson-learned&#34;&gt;Lesson Learned&lt;/h2&gt;
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nam led the team and trained the team to use LaTEX system to compile all reports&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Return on Investment (ROI) for Intervention of Pumps under uncertainties</title>
+      <link>/post/2019-09-29-pump-efficiency/</link>
+      <pubDate>Sun, 29 Sep 2019 23:30:45 +0800</pubDate>
+      <guid>/post/2019-09-29-pump-efficiency/</guid>
+      <description>&lt;p&gt;This post describes a generic approach on the computation of Net Present Value (NPV) and Life Cycle Cost estimation (LCC) for Preventive Intervention (PI) on pumps (e.g. centrifugal pumps) when decision makers are uncertain on, or do not have a rich set of data on failure of pump components.&lt;/p&gt;
+&lt;p&gt;Ideally, failure data on pump components should be recorded in time-series fashion that allows analyst to investigate on the frequency of failure and come up with a prediction. The prediction is powerful in view of generating budget for purchasing spare parts for not only one pump station but also for the entire network of pump stations. This is so-called Integrated Asset Management approach that should be at the center of an organization who has a long term view on how to sustain and prolong their assets.&lt;/p&gt;
+&lt;p&gt;However, in many practical situations, failure data is limited or recorded inappropriately that does not become a useful set of information for analytic. In such a circumstance, decisions on whether to replace/rehabilitate pumps should be dependent on various uncertainty factors such as efficiency, assumption on average decaying rate of the assets, and most importantly the energy consumption vs the production produce.&lt;/p&gt;
+&lt;p&gt;This article presents a simple yet useful model for managers to make decisions on replacement of pumps if they are more or less aware of deficiency, low efficiency, and high ratio of energy and production over time.&lt;/p&gt;
+&lt;p&gt;Aside from the above, it is also worth to consider replacement of pumps when the two following aspects are existed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Asset obsolescence;&lt;/li&gt;
+&lt;li&gt;Technological innovation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There two aspects should be viewed in a combination. Asset obsolescence could be a result of technological innovation or changes in standards and requirements. Suffice it to state that pumps of a station were designed/installed more than a decade ago, nowadays, pumps are designed and manufactured to be more reliable and durable, whilst the capital cost is significant lower than that in the past.&lt;/p&gt;
+&lt;h1 id=&#34;the-model&#34;&gt;The model&lt;/h1&gt;
+&lt;p&gt;Total Cost (TC) incurred in a period of T years is defined as the summation of Capital Cost (C) and Operation cost (O). It is note that operational cost includes routine maintenance cost.&lt;/p&gt;
+&lt;p&gt;$$ TC(T) = \sum_{i=1}^{I} \sum_{t=1}^{T}\frac{C_{i,t}+O_{i,t}\times \epsilon_{i,t}^{new}\times u_{i,t}+(1-\delta_{i,t})\times O_{i,t}\epsilon_{i,t}^{old}\times u_{i,t}}{(1+\rho)^t}$$&lt;/p&gt;
+&lt;p&gt;In the equation,  $\epsilon_{i,t}$, $u_{i,t}$, and  $\delta_{i,t}$ are the decreasing rate of efficiency, utilization, and decision variable of pump i in year t, respectively.&lt;/p&gt;
+&lt;h1 id=&#34;example&#34;&gt;Example&lt;/h1&gt;
+&lt;p&gt;A pump station has 6 booster pumps with the same configuration of 500 horsepower. The station has been in commission for more than 10 years and there has been a progressive degradation process, though it has not been captured appropriately. Sufficient failure data at component level is not available.&lt;/p&gt;
+&lt;p&gt;Tests have been conducted to measure the flow and the power rating that allows to come up efficiency of pump. However, due to non-optimal pipe configuration, the obtained efficiencies are also subjected to uncertainties.&lt;/p&gt;
+&lt;p&gt;Under such circumstance, decision makers have to make decisions under uncertainties.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Discount factor is 8.5% annually;&lt;/li&gt;
+&lt;li&gt;Capital cost for buying/installing a new pump of 500 horsepower would cost 5 millions Peso (~10,000 usd);&lt;/li&gt;
+&lt;li&gt;Efficiency of existing pumps are about 5% less than that of the original design;&lt;/li&gt;
+&lt;li&gt;Pumps are assumed to operate at 98% utilization level;&lt;/li&gt;
+&lt;li&gt;Price of 1 KW is 6.5 Peso;&lt;/li&gt;
+&lt;li&gt;There are 2 Intervention Strategies (IS) to be considerred. Herein refer to TC1 and TC2, respectively. TC1 is to replace existing pump with a new one in a step of 1 year. TC2 is Do Nothing, i.e., to keep the existing pumps as they are.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;source-code&#34;&gt;Source Code&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#this subroutine is used to estimate the cashflow of an investment for pump stations&lt;/span&gt;
+
+Npumps &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#total number of pumps&lt;/span&gt;
+TPeriod&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#this infers 5 years&lt;/span&gt;
+TC1&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TPeriod,ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Npumps) &lt;span style=&#34;color:#75715e&#34;&gt;#Option 1&lt;/span&gt;
+TC2&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TPeriod,ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Npumps) &lt;span style=&#34;color:#75715e&#34;&gt;#Option 2&lt;/span&gt;
+CAPEX&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TPeriod,ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Npumps) &lt;span style=&#34;color:#75715e&#34;&gt;#Captical investment cost&lt;/span&gt;
+OPEX&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TPeriod,ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Npumps) &lt;span style=&#34;color:#75715e&#34;&gt;#Operational Cost&lt;/span&gt;
+delta&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TPeriod,ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Npumps) &lt;span style=&#34;color:#75715e&#34;&gt;#decrease in efficiency&lt;/span&gt;
+epsilonold&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TPeriod,ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Npumps) &lt;span style=&#34;color:#75715e&#34;&gt;#decrease in efficiency&lt;/span&gt;
+epsilonnew&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TPeriod,ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Npumps) &lt;span style=&#34;color:#75715e&#34;&gt;#decrease in efficiency&lt;/span&gt;
+u&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TPeriod,ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Npumps) &lt;span style=&#34;color:#75715e&#34;&gt;#ultilization&lt;/span&gt;
+rho&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.085&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#discount factor&lt;/span&gt;
+pricee&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6.5&lt;/span&gt;
+hoursepower&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;
+utilization&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.98&lt;/span&gt;
+Newpumpcost&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5000000&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#Option 1 - Stagging investment for pump&lt;/span&gt;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(t in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; TPeriod){
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;if &lt;/span&gt;(t&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;){
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+      epsilonold[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.05&lt;/span&gt;
+    }
+  } else {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+    epsilonold[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;epsilonold[t&lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;,i]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.05&lt;/span&gt;
+    }
+  }
+}
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(t in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;TPeriod){
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+    delta[,]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+    delta[1,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    epsilonnew[1,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    delta[2,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    epsilonnew[2,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    delta[3,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    epsilonnew[3,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    delta[4,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    epsilonnew[4,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    delta[5,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    epsilonnew[5,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    delta[6,&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    epsilonnew[6,&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    CAPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;Newpumpcost &lt;span style=&#34;color:#75715e&#34;&gt;#peso&lt;/span&gt;
+    u[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;utilization
+    OPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; pricee&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;hoursepower&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;365&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.746&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;u[t,i] &lt;span style=&#34;color:#75715e&#34;&gt;#peso&lt;/span&gt;
+      }
+}
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(t in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; TPeriod){
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;if &lt;/span&gt;(delta[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;){
+
+      epsilonnew[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+
+    } else &lt;span style=&#34;color:#a6e22e&#34;&gt;if &lt;/span&gt;(i&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;amp; t&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;){
+
+        epsilonnew[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+
+
+    } else &lt;span style=&#34;color:#a6e22e&#34;&gt;if &lt;/span&gt;(t&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;){
+      epsilonnew[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;epsilonnew[t&lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;,i]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    }
+
+  }
+
+}
+
+epsilonnew&lt;span style=&#34;color:#a6e22e&#34;&gt;[is.na&lt;/span&gt;(epsilonnew)] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#redefine the value of epsilonold based on new value of epsilonnew&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(t in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; TPeriod){
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;if &lt;/span&gt;(epsilonnew[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;){
+
+      epsilonold[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;epsilonold[t,i]
+
+    } else &lt;span style=&#34;color:#a6e22e&#34;&gt;if &lt;/span&gt;(epsilonnew[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;){
+       epsilonold[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+     }
+   }
+ }
+
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(t in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;TPeriod){
+    TC1[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;(((CAPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;delta[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;OPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;epsilonnew[t,i]))&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;delta[t,i])&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;OPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;epsilonold[t,i])&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;rho)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;t
+  }
+}
+&lt;span style=&#34;color:#a6e22e&#34;&gt;cat&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Replacement of pumps \n&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;print&lt;/span&gt;(TC1)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#stop(&amp;#34;dd&amp;#34;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#Option 2 - Do Nothing&lt;/span&gt;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(t in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;TPeriod){
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+    delta[,]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+    CAPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#peso&lt;/span&gt;
+    u[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;utilization
+    epsilonnew[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
+      OPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; pricee&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;hoursepower&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;365&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.746&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;u[t,i] &lt;span style=&#34;color:#75715e&#34;&gt;#peso&lt;/span&gt;
+  }
+}
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(t in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; TPeriod){
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;if &lt;/span&gt;(t&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;){
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+      epsilonold[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.05&lt;/span&gt;
+    }
+  } else {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+      epsilonold[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;epsilonold[t&lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;,i]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.05&lt;/span&gt;
+    }
+  }
+}
+
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(i in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;Npumps){
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(t in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;TPeriod){
+    TC2[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;(((CAPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;OPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;epsilonnew[t,i])&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;delta[t,i])&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;delta[t,i])&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;OPEX[t,i]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;epsilonold[t,i])&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;rho)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;t
+  }
+}
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;cat&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Do Nothing \n&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;print&lt;/span&gt;(TC2)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;cat&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;The difference of investment \n&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;print&lt;/span&gt;(TC1&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;TC2)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#plot the graph for comparison&lt;/span&gt;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(ggplot2)
+time&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;TPeriod)
+
+x&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data.frame&lt;/span&gt;(dat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TC1[,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;],IS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;TC1&amp;#34;&lt;/span&gt;))
+y&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data.frame&lt;/span&gt;(dat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TC2[,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;],IS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;TC2&amp;#34;&lt;/span&gt;))
+
+x&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cbind&lt;/span&gt;(time,x)
+y&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cbind&lt;/span&gt;(time,y)
+ xy&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rbind&lt;/span&gt;(x, y)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(xy, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(fill&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;IS, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;dat, x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;factor&lt;/span&gt;(time))) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_bar&lt;/span&gt;(position&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;dodge&amp;#34;&lt;/span&gt;, stat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;identity&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;stop&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+
+TC1&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data.frame&lt;/span&gt;(TC1,IS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;TC1&amp;#34;&lt;/span&gt;))
+TC2&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data.frame&lt;/span&gt;(TC2,IS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;TC2&amp;#34;&lt;/span&gt;))
+&lt;span style=&#34;color:#75715e&#34;&gt;#TC2&amp;lt;-data.frame(TC2=TC2[,1])&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#TC1&amp;lt;-data.frame(TC1)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#TC2&amp;lt;-data.frame(TC2)&lt;/span&gt;
+
+TC1&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cbind&lt;/span&gt;(time,TC1)
+TC2&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cbind&lt;/span&gt;(time,TC2)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(reshape)
+
+mdataTC1 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;melt&lt;/span&gt;(TC1,id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;time&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;IS&amp;#34;&lt;/span&gt;))
+
+mdataTC2 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;melt&lt;/span&gt;(TC2,id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;time&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;IS&amp;#34;&lt;/span&gt;))
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#joint the two data&lt;/span&gt;
+total &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rbind&lt;/span&gt;(mdataTC1, mdataTC2)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(total, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(fill&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;IS, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;value, x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;factor&lt;/span&gt;(time)),variable&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;X1) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_bar&lt;/span&gt;(position&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;dodge&amp;#34;&lt;/span&gt;, stat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;identity&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#ggplot(total, aes(fill=variable, y=value, x=factor(time)),variable=X1) + geom_bar(position=&amp;#34;fill&amp;#34;, stat=&amp;#34;identity&amp;#34;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#ggplot(total, aes(y=value, x=variable, color=IS, fill=IS)) + geom_bar( stat=&amp;#34;identity&amp;#34;) +   facet_wrap(~factor(time))&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
+&lt;p&gt;Estimation results are shown in following tables&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;source(&amp;lsquo;C:/Dropbox/workspace/RProjects/PlantAudit/PAG/tc.R&amp;rsquo;)
+Replacement of pumps&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;          [,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;]
+ [1,] &lt;span style=&#34;color:#ae81ff&#34;&gt;23791565&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt;
+ [2,] &lt;span style=&#34;color:#ae81ff&#34;&gt;17680433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;21927709&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt;
+ [3,] &lt;span style=&#34;color:#ae81ff&#34;&gt;16295330&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16295330&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20209870&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18863881&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18863881&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18863881&lt;/span&gt;
+ [4,] &lt;span style=&#34;color:#ae81ff&#34;&gt;15018737&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15018737&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15018737&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18626609&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18255369&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18255369&lt;/span&gt;
+ [5,] &lt;span style=&#34;color:#ae81ff&#34;&gt;13842154&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13842154&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13842154&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13842154&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17167381&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17666486&lt;/span&gt;
+ [6,] &lt;span style=&#34;color:#ae81ff&#34;&gt;12757746&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12757746&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12757746&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12757746&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12757746&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15822471&lt;/span&gt;
+ [7,] &lt;span style=&#34;color:#ae81ff&#34;&gt;11758291&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11758291&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11758291&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11758291&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11758291&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11758291&lt;/span&gt;
+ [8,] &lt;span style=&#34;color:#ae81ff&#34;&gt;10837135&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10837135&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10837135&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10837135&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10837135&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10837135&lt;/span&gt;
+ [9,]  &lt;span style=&#34;color:#ae81ff&#34;&gt;9988142&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9988142&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9988142&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9988142&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9988142&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9988142&lt;/span&gt;
+[10,]  &lt;span style=&#34;color:#ae81ff&#34;&gt;9205661&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9205661&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9205661&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9205661&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9205661&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9205661&lt;/span&gt;
+Do Nothing
+          [,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;]
+ [1,] &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20142433&lt;/span&gt;
+ [2,] &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19492677&lt;/span&gt;
+ [3,] &lt;span style=&#34;color:#ae81ff&#34;&gt;18863881&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18863881&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18863881&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18863881&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18863881&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18863881&lt;/span&gt;
+ [4,] &lt;span style=&#34;color:#ae81ff&#34;&gt;18255369&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18255369&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18255369&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18255369&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18255369&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18255369&lt;/span&gt;
+ [5,] &lt;span style=&#34;color:#ae81ff&#34;&gt;17666486&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17666486&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17666486&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17666486&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17666486&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17666486&lt;/span&gt;
+ [6,] &lt;span style=&#34;color:#ae81ff&#34;&gt;17096599&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17096599&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17096599&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17096599&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17096599&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17096599&lt;/span&gt;
+ [7,] &lt;span style=&#34;color:#ae81ff&#34;&gt;16545096&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16545096&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16545096&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16545096&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16545096&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16545096&lt;/span&gt;
+ [8,] &lt;span style=&#34;color:#ae81ff&#34;&gt;16011383&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16011383&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16011383&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16011383&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16011383&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16011383&lt;/span&gt;
+ [9,] &lt;span style=&#34;color:#ae81ff&#34;&gt;15494887&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15494887&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15494887&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15494887&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15494887&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15494887&lt;/span&gt;
+[10,] &lt;span style=&#34;color:#ae81ff&#34;&gt;14995052&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14995052&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14995052&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14995052&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14995052&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14995052&lt;/span&gt;
+The difference of investment
+          [,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]       [,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]       [,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]     [,&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;]
+ [1,]  &lt;span style=&#34;color:#ae81ff&#34;&gt;3649131&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+ [2,] &lt;span style=&#34;color:#ae81ff&#34;&gt;-1812244&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2435032&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+ [3,] &lt;span style=&#34;color:#ae81ff&#34;&gt;-2568551&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-2568551&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1345989&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+ [4,] &lt;span style=&#34;color:#ae81ff&#34;&gt;-3236632&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-3236632&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-3236632&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;371239.7&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+ [5,] &lt;span style=&#34;color:#ae81ff&#34;&gt;-3824332&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-3824332&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-3824332&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-3824332.0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-499104.8&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+ [6,] &lt;span style=&#34;color:#ae81ff&#34;&gt;-4338854&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-4338854&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-4338854&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-4338853.7&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-4338853.7&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-1274128&lt;/span&gt;
+ [7,] &lt;span style=&#34;color:#ae81ff&#34;&gt;-4786805&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-4786805&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-4786805&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-4786805.2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-4786805.2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-4786805&lt;/span&gt;
+ [8,] &lt;span style=&#34;color:#ae81ff&#34;&gt;-5174249&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5174249&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5174249&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5174248.9&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5174248.9&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5174249&lt;/span&gt;
+ [9,] &lt;span style=&#34;color:#ae81ff&#34;&gt;-5506745&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5506745&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5506745&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5506744.7&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5506744.7&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5506745&lt;/span&gt;
+[10,] &lt;span style=&#34;color:#ae81ff&#34;&gt;-5789391&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5789391&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5789391&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5789390.9&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5789390.9&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-5789391&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As can be seen from the table of difference, if pump 1 is to be replaced (TC1) now (year 1), the Owner needs to spend 5 millions Peso for the pump, plus the energy cost for that year, the total cost in year 1 would be 23,791,565 Peso. Meanwhile, if pump 1 is to follow TC2 (Do Nothing), there is a cost of 20,142,433 Peso, which is basically the energy cost. The difference between TC1 and TC2 in year 1 is 3,649,131 Peso, meaning the Owner will spend more money in year 1. In other words, there is a negative cash flow in the first year.&lt;/p&gt;
+&lt;p&gt;However, from 2nd year onward, there is a decreasing in energy consumption, this is thanks to the higher efficiency pump that consume less energy. As a result, there is a saving of -1,812,244 Peso. This value has been discounted and it is the Net Present Value of the OPEX incurred in year two. This difference can be notably seen in the following graph. This graph clearly shows that more energy in following years will be saved if the pump 1 is to be replaced now. It can also be dictated that the amount of cost associated with the saving in energy will compensate the CAPEX within 2 years of investment.&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ROIpumps/ROIpump_roi.png&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Determination of Near‐Optimal Restoration Programs for Transportation Networks Following Natural Hazard Events Using Simulated Annealing</title>
+      <link>/publication/hackl2018/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/hackl2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Determining an Optimal Set of Work Zones on Large Infrastructure Networks in a GIS Framework</title>
+      <link>/publication/lethanh2018/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Determination of Markov Transition Probabilities to be Used in Bridge Management from Mechanistic-Empirical Models</title>
+      <link>/publication/lethanh2017/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A real option approach to determine optimal intervention windows for multi-national rail corridor</title>
+      <link>/publication/lethanh2016g/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2016g/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigation of the Ability to Estimate Values of Road Section Condition Indicators Based on Their Spatial Correlation</title>
+      <link>/publication/lethanh2016b/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2016b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estimating Markov Transition Probabilities for Reinforced Concrete Bridges based on Mechanistic-Empirical Corrosion Models</title>
+      <link>/publication/lethanh2016f/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2016f/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infrastructure Deterioration Prediction with a Poisson Hidden Markov Model on Time Series Data</title>
+      <link>/publication/lethanh2014d/</link>
+      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
+      <guid>/publication/lethanh2014d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimal intervention strategies for multiple objects affected by manifest and latent deterioration processes</title>
+      <link>/publication/lethanh2014/</link>
+      <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigation of the Use of a Weibull Model for the Deterioration of Optimal Road Link Intervention Strategies</title>
+      <link>/publication/lethanh2013a/</link>
+      <pubDate>Tue, 22 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2013a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Use of Exponential Hidden Markov Models for Modeling Pavement Deterioration</title>
+      <link>/publication/lethanh2013b/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2013b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A statistical deterioration forecasting method using hidden Markov model for infrastructure management</title>
+      <link>/publication/kobayashi2012a/</link>
+      <pubDate>Sat, 19 May 2012 13:20:32 +0800</pubDate>
+      <guid>/publication/kobayashi2012a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Bayesian Estimation Method to Improve Deterioration Prediction for Infrastructure System with Markov Chain Model</title>
+      <link>/publication/kobayashi2012/</link>
+      <pubDate>Mon, 19 Mar 2012 13:20:32 +0800</pubDate>
+      <guid>/publication/kobayashi2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deterioration Forecasting Model with Multistage Weibull Hazard Functions</title>
+      <link>/publication/kobayashi2010a/</link>
+      <pubDate>Mon, 10 May 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/kobayashi2010a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Benchmarking Approach to Pavement Management: Lessons from Vietnam</title>
+      <link>/publication/lethanh2009/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Optimization Methods for Infrastructure Management with Incomplete Monitoring Data</title>
+      <link>/publication/lethanh2009c/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2009c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Local mixtures hazard model: A semi-parametric approach to risk management in pavement system</title>
+      <link>/publication/lethanh2008c/</link>
+      <pubDate>Tue, 10 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2008c/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

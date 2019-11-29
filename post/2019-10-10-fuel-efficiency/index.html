@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nam Le">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This example shows a very simple regression analysis using fuel data of 38 cars. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs.
+There are 2 learning points to be remembered with this example.
+Leaps package with regsubsets fuction. Regsubsets function allows to perform regression on subsets of data, particularly useful to compare across model’s predictors to understand the fit of the model.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/2019-10-10-fuel-efficiency/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.70ad938936228f620b2c68a380ab9522.css">
+
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/2019-10-10-fuel-efficiency/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="">
+  <meta property="og:url" content="/post/2019-10-10-fuel-efficiency/">
+  <meta property="og:title" content="Fuel Efficiency - Regression Analysis | ">
+  <meta property="og:description" content="This example shows a very simple regression analysis using fuel data of 38 cars. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs.
+There are 2 learning points to be remembered with this example.
+Leaps package with regsubsets fuction. Regsubsets function allows to perform regression on subsets of data, particularly useful to compare across model’s predictors to understand the fit of the model."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-10-10T23:30:45&#43;08:00">
+    
+    <meta property="article:modified_time" content="2019-10-10T23:30:45&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2019-10-10-fuel-efficiency/"
+  },
+  "headline": "Fuel Efficiency - Regression Analysis",
+  
+  "datePublished": "2019-10-10T23:30:45+08:00",
+  "dateModified": "2019-10-10T23:30:45+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Nam Le"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "This example shows a very simple regression analysis using fuel data of 38 cars. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs.\nThere are 2 learning points to be remembered with this example.\nLeaps package with regsubsets fuction. Regsubsets function allows to perform regression on subsets of data, particularly useful to compare across model’s predictors to understand the fit of the model."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Fuel Efficiency - Regression Analysis | </title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Bio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/business/"><span>Business</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication/"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/library/"><span>Library</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/apps/"><span>Apps</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Fuel Efficiency - Regression Analysis</h1>
+
+  
+  <p class="page-subtitle">Data Mining and Business Analytics with R</p>
+  
+
+  
+    
+
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 10, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2019-10-10-fuel-efficiency/#disqus_thread"></a>
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/2019-10-10-fuel-efficiency/&amp;text=Fuel%20Efficiency%20-%20Regression%20Analysis" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/2019-10-10-fuel-efficiency/&amp;t=Fuel%20Efficiency%20-%20Regression%20Analysis" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Fuel%20Efficiency%20-%20Regression%20Analysis&amp;body=/post/2019-10-10-fuel-efficiency/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2019-10-10-fuel-efficiency/&amp;title=Fuel%20Efficiency%20-%20Regression%20Analysis" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Fuel%20Efficiency%20-%20Regression%20Analysis%20/post/2019-10-10-fuel-efficiency/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>This example shows a very simple regression analysis using fuel data of 38 cars. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs.</p>
+<p>There are 2 learning points to be remembered with this example.</p>
+<h1 id="leaps-package-with-regsubsets-fuction">Leaps package with regsubsets fuction.</h1>
+<p>Regsubsets function allows to perform regression on subsets of data, particularly useful to compare across model’s predictors to understand the fit of the model.</p>
+<p><a href="https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets">https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets</a></p>
+<h1 id="crossvalidation">Cross-Validation</h1>
+<blockquote>
+<p>Cross-validation removes one case from the data set of n cases, fits the model to the reduced data set, and predicts the response of that one case that has been removed from the estimation. This is repeated for each of the n cases. The summary statistics of the n genuine out-of-sample prediction errors (mean error, root mean square error, mean absolute percent error) help us assess the out-of-sample prediction performance. Cross-validation is very informative as it evaluates the model on new data. We find that the model with all six regressors performs better. It leads to a mean absolute percent error of about 6.75% (as compared to 8.23% for the model with weight as the only regressor).</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#f92672">&gt;</span> FuelEff
+    GPM    WT DIS NC  HP  ACC ET
+<span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">5.917</span> <span style="color:#ae81ff">4.360</span> <span style="color:#ae81ff">350</span>  <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">155</span> <span style="color:#ae81ff">14.9</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">2</span>  <span style="color:#ae81ff">6.452</span> <span style="color:#ae81ff">4.054</span> <span style="color:#ae81ff">351</span>  <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">142</span> <span style="color:#ae81ff">14.3</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">5.208</span> <span style="color:#ae81ff">3.605</span> <span style="color:#ae81ff">267</span>  <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">125</span> <span style="color:#ae81ff">15.0</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">5.405</span> <span style="color:#ae81ff">3.940</span> <span style="color:#ae81ff">360</span>  <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">150</span> <span style="color:#ae81ff">13.0</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">5</span>  <span style="color:#ae81ff">3.333</span> <span style="color:#ae81ff">2.155</span>  <span style="color:#ae81ff">98</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">68</span> <span style="color:#ae81ff">16.5</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">3.636</span> <span style="color:#ae81ff">2.560</span> <span style="color:#ae81ff">134</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">95</span> <span style="color:#ae81ff">14.2</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">7</span>  <span style="color:#ae81ff">3.676</span> <span style="color:#ae81ff">2.300</span> <span style="color:#ae81ff">119</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">97</span> <span style="color:#ae81ff">14.7</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">8</span>  <span style="color:#ae81ff">3.236</span> <span style="color:#ae81ff">2.230</span> <span style="color:#ae81ff">105</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">75</span> <span style="color:#ae81ff">14.5</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">9</span>  <span style="color:#ae81ff">4.926</span> <span style="color:#ae81ff">2.830</span> <span style="color:#ae81ff">131</span>  <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">103</span> <span style="color:#ae81ff">15.9</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">10</span> <span style="color:#ae81ff">5.882</span> <span style="color:#ae81ff">3.140</span> <span style="color:#ae81ff">163</span>  <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">125</span> <span style="color:#ae81ff">13.6</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">11</span> <span style="color:#ae81ff">4.630</span> <span style="color:#ae81ff">2.795</span> <span style="color:#ae81ff">121</span>  <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">115</span> <span style="color:#ae81ff">15.7</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">12</span> <span style="color:#ae81ff">6.173</span> <span style="color:#ae81ff">3.410</span> <span style="color:#ae81ff">163</span>  <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">133</span> <span style="color:#ae81ff">15.8</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">13</span> <span style="color:#ae81ff">4.854</span> <span style="color:#ae81ff">3.380</span> <span style="color:#ae81ff">231</span>  <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">105</span> <span style="color:#ae81ff">15.8</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">14</span> <span style="color:#ae81ff">4.808</span> <span style="color:#ae81ff">3.070</span> <span style="color:#ae81ff">200</span>  <span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">85</span> <span style="color:#ae81ff">16.7</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">15</span> <span style="color:#ae81ff">5.376</span> <span style="color:#ae81ff">3.620</span> <span style="color:#ae81ff">225</span>  <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">110</span> <span style="color:#ae81ff">18.7</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">16</span> <span style="color:#ae81ff">5.525</span> <span style="color:#ae81ff">3.410</span> <span style="color:#ae81ff">258</span>  <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">120</span> <span style="color:#ae81ff">15.1</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">17</span> <span style="color:#ae81ff">5.882</span> <span style="color:#ae81ff">3.840</span> <span style="color:#ae81ff">305</span>  <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">130</span> <span style="color:#ae81ff">15.4</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">18</span> <span style="color:#ae81ff">5.682</span> <span style="color:#ae81ff">3.725</span> <span style="color:#ae81ff">302</span>  <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">129</span> <span style="color:#ae81ff">13.4</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">19</span> <span style="color:#ae81ff">6.061</span> <span style="color:#ae81ff">3.955</span> <span style="color:#ae81ff">351</span>  <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">138</span> <span style="color:#ae81ff">13.2</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">20</span> <span style="color:#ae81ff">5.495</span> <span style="color:#ae81ff">3.830</span> <span style="color:#ae81ff">318</span>  <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">135</span> <span style="color:#ae81ff">15.2</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">21</span> <span style="color:#ae81ff">3.774</span> <span style="color:#ae81ff">2.585</span> <span style="color:#ae81ff">140</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">88</span> <span style="color:#ae81ff">14.4</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">22</span> <span style="color:#ae81ff">4.566</span> <span style="color:#ae81ff">2.910</span> <span style="color:#ae81ff">171</span>  <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">109</span> <span style="color:#ae81ff">16.6</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">23</span> <span style="color:#ae81ff">2.933</span> <span style="color:#ae81ff">1.975</span>  <span style="color:#ae81ff">86</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">65</span> <span style="color:#ae81ff">15.2</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">24</span> <span style="color:#ae81ff">2.849</span> <span style="color:#ae81ff">1.915</span>  <span style="color:#ae81ff">98</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">80</span> <span style="color:#ae81ff">14.4</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">25</span> <span style="color:#ae81ff">3.650</span> <span style="color:#ae81ff">2.670</span> <span style="color:#ae81ff">121</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">80</span> <span style="color:#ae81ff">15.0</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">26</span> <span style="color:#ae81ff">3.175</span> <span style="color:#ae81ff">1.990</span>  <span style="color:#ae81ff">89</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">71</span> <span style="color:#ae81ff">14.9</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">27</span> <span style="color:#ae81ff">3.390</span> <span style="color:#ae81ff">2.135</span>  <span style="color:#ae81ff">98</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">68</span> <span style="color:#ae81ff">16.6</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">28</span> <span style="color:#ae81ff">3.521</span> <span style="color:#ae81ff">2.670</span> <span style="color:#ae81ff">151</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">90</span> <span style="color:#ae81ff">16.0</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">29</span> <span style="color:#ae81ff">3.472</span> <span style="color:#ae81ff">2.595</span> <span style="color:#ae81ff">173</span>  <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">115</span> <span style="color:#ae81ff">11.3</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">30</span> <span style="color:#ae81ff">3.731</span> <span style="color:#ae81ff">2.700</span> <span style="color:#ae81ff">173</span>  <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">115</span> <span style="color:#ae81ff">12.9</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">31</span> <span style="color:#ae81ff">2.985</span> <span style="color:#ae81ff">2.556</span> <span style="color:#ae81ff">151</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">90</span> <span style="color:#ae81ff">13.2</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">32</span> <span style="color:#ae81ff">2.924</span> <span style="color:#ae81ff">2.200</span> <span style="color:#ae81ff">105</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">70</span> <span style="color:#ae81ff">13.2</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">33</span> <span style="color:#ae81ff">3.145</span> <span style="color:#ae81ff">2.020</span>  <span style="color:#ae81ff">85</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">65</span> <span style="color:#ae81ff">19.2</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">34</span> <span style="color:#ae81ff">2.681</span> <span style="color:#ae81ff">2.130</span>  <span style="color:#ae81ff">91</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">69</span> <span style="color:#ae81ff">14.7</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">35</span> <span style="color:#ae81ff">3.279</span> <span style="color:#ae81ff">2.190</span>  <span style="color:#ae81ff">97</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">78</span> <span style="color:#ae81ff">14.1</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">36</span> <span style="color:#ae81ff">4.545</span> <span style="color:#ae81ff">2.815</span> <span style="color:#ae81ff">146</span>  <span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">97</span> <span style="color:#ae81ff">14.5</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">37</span> <span style="color:#ae81ff">4.651</span> <span style="color:#ae81ff">2.600</span> <span style="color:#ae81ff">121</span>  <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">110</span> <span style="color:#ae81ff">12.8</span>  <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">38</span> <span style="color:#ae81ff">3.135</span> <span style="color:#ae81ff">1.925</span>  <span style="color:#ae81ff">89</span>  <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">71</span> <span style="color:#ae81ff">14.0</span>  <span style="color:#ae81ff">0</span>
+</code></pre></div><h1 id="code">CODE</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">## first we read in the data</span>
+FuelEff <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">https://www.biz.uiowa.edu/faculty/jledolter/DataMining/FuelEfficiency.csv&#34;</span>)
+<span style="color:#75715e">#FuelEff &lt;- read.csv(&#34;FuelEfficiency.csv&#34;)</span>
+
+FuelEff
+
+<span style="color:#75715e">#----------------------------</span>
+<span style="color:#a6e22e">plot.new</span>()
+<span style="color:#75715e">#par(mfrow=c(1,1))</span>
+<span style="color:#a6e22e">par</span>(mar<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)<span style="color:#ae81ff">+0.1</span>,mfrow<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">3</span>),bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">white&#34;</span>,cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, cex.main <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+<span style="color:#a6e22e">plot</span>(GPM<span style="color:#f92672">~</span>MPG,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">plot</span>(GPM<span style="color:#f92672">~</span>WT,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">plot</span>(GPM<span style="color:#f92672">~</span>DIS,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">plot</span>(GPM<span style="color:#f92672">~</span>NC,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">plot</span>(GPM<span style="color:#f92672">~</span>HP,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">plot</span>(GPM<span style="color:#f92672">~</span>ACC,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">plot</span>(GPM<span style="color:#f92672">~</span>ET,data<span style="color:#f92672">=</span>FuelEff)
+
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">fueleff_xyplot.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+
+FuelEff<span style="color:#f92672">=</span>FuelEff[<span style="color:#ae81ff">-1</span>] <span style="color:#75715e">#ignore the MPG column</span>
+FuelEff
+
+<span style="color:#75715e">## regression on all data</span>
+m1<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(GPM<span style="color:#f92672">~</span>.,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">summary</span>(m1)
+
+<span style="color:#a6e22e">cor</span>(FuelEff)
+
+<span style="color:#75715e">## best subset regression in R</span>
+<span style="color:#a6e22e">library</span>(leaps)
+X<span style="color:#f92672">=</span>FuelEff[,<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">7</span>]
+y<span style="color:#f92672">=</span>FuelEff[,<span style="color:#ae81ff">1</span>]
+
+<span style="color:#75715e">#use the regsubsets function from package leaps to compute regression of the subsets</span>
+<span style="color:#75715e">#https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets</span>
+
+
+out<span style="color:#f92672">=</span><span style="color:#a6e22e">summary</span>(<span style="color:#a6e22e">regsubsets</span>(X,y,nbest<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,nvmax<span style="color:#f92672">=</span><span style="color:#a6e22e">ncol</span>(X)))
+tab<span style="color:#f92672">=</span><span style="color:#a6e22e">cbind</span>(out<span style="color:#f92672">$</span>which,out<span style="color:#f92672">$</span>rsq,out<span style="color:#f92672">$</span>adjr2,out<span style="color:#f92672">$</span>cp)
+tab
+
+m2<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(GPM<span style="color:#f92672">~</span>WT,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">summary</span>(m2)
+
+<span style="color:#75715e">## cross-validation (leave one out) for the model on all six regressors</span>
+n<span style="color:#f92672">=</span><span style="color:#a6e22e">length</span>(FuelEff<span style="color:#f92672">$</span>GPM)
+diff<span style="color:#f92672">=</span><span style="color:#a6e22e">dim</span>(n)
+percdiff<span style="color:#f92672">=</span><span style="color:#a6e22e">dim</span>(n)
+<span style="color:#a6e22e">for </span>(k in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n) {
+  train1<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)
+  train<span style="color:#f92672">=</span>train1[train1<span style="color:#f92672">!=</span>k]
+  <span style="color:#75715e">## the R expression &#34;train1[train1!=k]&#34; picks from train1 those</span>
+  <span style="color:#75715e">## elements that are different from k and stores those elements in the</span>
+  <span style="color:#75715e">## object train.</span>
+  <span style="color:#75715e">## For k=1, train consists of elements that are different from 1; that</span>
+  <span style="color:#75715e">## is 2, 3, …, n.</span>
+  m1<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(GPM<span style="color:#f92672">~</span>.,data<span style="color:#f92672">=</span>FuelEff[train,])
+  pred<span style="color:#f92672">=</span><span style="color:#a6e22e">predict</span>(m1,newdat<span style="color:#f92672">=</span>FuelEff[<span style="color:#f92672">-</span>train,]) <span style="color:#75715e">#adding the new data, which is ignored earlier</span>
+  obs<span style="color:#f92672">=</span>FuelEff<span style="color:#f92672">$</span>GPM[<span style="color:#f92672">-</span>train]
+  diff[k]<span style="color:#f92672">=</span>obs<span style="color:#f92672">-</span>pred
+  percdiff[k]<span style="color:#f92672">=</span><span style="color:#a6e22e">abs</span>(diff[k])<span style="color:#f92672">/</span>obs
+}
+me<span style="color:#f92672">=</span><span style="color:#a6e22e">mean</span>(diff)
+rmse<span style="color:#f92672">=</span><span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">mean</span>(diff<span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>))
+mape<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span><span style="color:#f92672">*</span>(<span style="color:#a6e22e">mean</span>(percdiff))
+me   <span style="color:#75715e"># mean error</span>
+rmse <span style="color:#75715e"># root mean square error</span>
+mape <span style="color:#75715e"># mean absolute percent error</span>
+
+<span style="color:#75715e">## cross-validation (leave one out) for the model on weight only</span>
+n<span style="color:#f92672">=</span><span style="color:#a6e22e">length</span>(FuelEff<span style="color:#f92672">$</span>GPM)
+diff<span style="color:#f92672">=</span><span style="color:#a6e22e">dim</span>(n)
+percdiff<span style="color:#f92672">=</span><span style="color:#a6e22e">dim</span>(n)
+<span style="color:#a6e22e">for </span>(k in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n) {
+  train1<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)
+  train<span style="color:#f92672">=</span>train1[train1<span style="color:#f92672">!=</span>k]
+  m2<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(GPM<span style="color:#f92672">~</span>WT,data<span style="color:#f92672">=</span>FuelEff[train,])
+  pred<span style="color:#f92672">=</span><span style="color:#a6e22e">predict</span>(m2,newdat<span style="color:#f92672">=</span>FuelEff[<span style="color:#f92672">-</span>train,])
+  obs<span style="color:#f92672">=</span>FuelEff<span style="color:#f92672">$</span>GPM[<span style="color:#f92672">-</span>train]
+  diff[k]<span style="color:#f92672">=</span>obs<span style="color:#f92672">-</span>pred
+  percdiff[k]<span style="color:#f92672">=</span><span style="color:#a6e22e">abs</span>(diff[k])<span style="color:#f92672">/</span>obs
+}
+me<span style="color:#f92672">=</span><span style="color:#a6e22e">mean</span>(diff)
+rmse<span style="color:#f92672">=</span><span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">mean</span>(diff<span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>))
+mape<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span><span style="color:#f92672">*</span>(<span style="color:#a6e22e">mean</span>(percdiff))
+me   <span style="color:#75715e"># mean error</span>
+rmse <span style="color:#75715e"># root mean square error</span>
+mape <span style="color:#75715e"># mean absolute percent error</span>
+</code></pre></div><h1 id="graphs-and-outcomes">Graphs and Outcomes</h1>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/FuelEfficiency/fueleff_xyplot.png" alt="Foo"><!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">## regression on all data</span>
+m1<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(GPM<span style="color:#f92672">~</span>.,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">summary</span>(m1)
+Call<span style="color:#f92672">:</span>
+<span style="color:#a6e22e">lm</span>(formula <span style="color:#f92672">=</span> GPM <span style="color:#f92672">~</span> ., data <span style="color:#f92672">=</span> FuelEff)
+
+Residuals<span style="color:#f92672">:</span>
+    Min      <span style="color:#ae81ff">1</span>Q  Median      <span style="color:#ae81ff">3</span>Q     Max
+<span style="color:#ae81ff">-0.4996</span> <span style="color:#ae81ff">-0.2547</span>  <span style="color:#ae81ff">0.0402</span>  <span style="color:#ae81ff">0.1956</span>  <span style="color:#ae81ff">0.6455</span>
+
+Coefficients<span style="color:#f92672">:</span>
+             Estimate Std. Error t value <span style="color:#a6e22e">Pr</span>(<span style="color:#f92672">&amp;</span>gt;<span style="color:#f92672">|</span>t<span style="color:#f92672">|</span>)
+(Intercept) <span style="color:#ae81ff">-2.599357</span>   <span style="color:#ae81ff">0.663403</span>  <span style="color:#ae81ff">-3.918</span> <span style="color:#ae81ff">0.000458</span> <span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>
+WT           <span style="color:#ae81ff">0.787768</span>   <span style="color:#ae81ff">0.451925</span>   <span style="color:#ae81ff">1.743</span> <span style="color:#ae81ff">0.091222</span> .
+DIS         <span style="color:#ae81ff">-0.004890</span>   <span style="color:#ae81ff">0.002696</span>  <span style="color:#ae81ff">-1.814</span> <span style="color:#ae81ff">0.079408</span> .
+NC           <span style="color:#ae81ff">0.444157</span>   <span style="color:#ae81ff">0.122683</span>   <span style="color:#ae81ff">3.620</span> <span style="color:#ae81ff">0.001036</span> <span style="color:#f92672">*</span><span style="color:#f92672">*</span>
+HP           <span style="color:#ae81ff">0.023599</span>   <span style="color:#ae81ff">0.006742</span>   <span style="color:#ae81ff">3.500</span> <span style="color:#ae81ff">0.001431</span> <span style="color:#f92672">*</span><span style="color:#f92672">*</span>
+ACC          <span style="color:#ae81ff">0.068814</span>   <span style="color:#ae81ff">0.044213</span>   <span style="color:#ae81ff">1.556</span> <span style="color:#ae81ff">0.129757</span>
+ET          <span style="color:#ae81ff">-0.959634</span>   <span style="color:#ae81ff">0.266785</span>  <span style="color:#ae81ff">-3.597</span> <span style="color:#ae81ff">0.001104</span> <span style="color:#f92672">*</span><span style="color:#f92672">*</span>
+<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#f92672">-</span>
+Signif. codes<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0</span> ‘<span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.001</span> ‘<span style="color:#f92672">*</span><span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.01</span> ‘<span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.05</span> ‘.’ <span style="color:#ae81ff">0.1</span> ‘ ’ <span style="color:#ae81ff">1</span>
+
+Residual standard error<span style="color:#f92672">:</span> <span style="color:#ae81ff">0.313</span> on <span style="color:#ae81ff">31</span> degrees of freedom
+Multiple R<span style="color:#f92672">-</span>squared<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0.9386</span>,    Adjusted R<span style="color:#f92672">-</span>squared<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0.9267</span>
+F<span style="color:#f92672">-</span>statistic<span style="color:#f92672">:</span> <span style="color:#ae81ff">78.94</span> on <span style="color:#ae81ff">6</span> and <span style="color:#ae81ff">31</span> DF,  p<span style="color:#f92672">-</span>value<span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2.2e-16</span>
+
+<span style="color:#a6e22e">cor</span>(FuelEff)
+           GPM          WT        DIS         NC         HP         ACC         ET
+GPM <span style="color:#ae81ff">1.00000000</span>  <span style="color:#ae81ff">0.92626656</span>  <span style="color:#ae81ff">0.8229098</span>  <span style="color:#ae81ff">0.8411880</span>  <span style="color:#ae81ff">0.8876992</span>  <span style="color:#ae81ff">0.03307093</span>  <span style="color:#ae81ff">0.5206121</span>
+WT  <span style="color:#ae81ff">0.92626656</span>  <span style="color:#ae81ff">1.00000000</span>  <span style="color:#ae81ff">0.9507647</span>  <span style="color:#ae81ff">0.9166777</span>  <span style="color:#ae81ff">0.9172204</span> <span style="color:#ae81ff">-0.03357386</span>  <span style="color:#ae81ff">0.6673661</span>
+DIS <span style="color:#ae81ff">0.82290984</span>  <span style="color:#ae81ff">0.95076469</span>  <span style="color:#ae81ff">1.0000000</span>  <span style="color:#ae81ff">0.9402812</span>  <span style="color:#ae81ff">0.8717993</span> <span style="color:#ae81ff">-0.14341745</span>  <span style="color:#ae81ff">0.7746636</span>
+NC  <span style="color:#ae81ff">0.84118805</span>  <span style="color:#ae81ff">0.91667774</span>  <span style="color:#ae81ff">0.9402812</span>  <span style="color:#ae81ff">1.0000000</span>  <span style="color:#ae81ff">0.8638473</span> <span style="color:#ae81ff">-0.12924363</span>  <span style="color:#ae81ff">0.8311721</span>
+HP  <span style="color:#ae81ff">0.88769915</span>  <span style="color:#ae81ff">0.91722045</span>  <span style="color:#ae81ff">0.8717993</span>  <span style="color:#ae81ff">0.8638473</span>  <span style="color:#ae81ff">1.0000000</span> <span style="color:#ae81ff">-0.25262113</span>  <span style="color:#ae81ff">0.7202350</span>
+ACC <span style="color:#ae81ff">0.03307093</span> <span style="color:#ae81ff">-0.03357386</span> <span style="color:#ae81ff">-0.1434174</span> <span style="color:#ae81ff">-0.1292436</span> <span style="color:#ae81ff">-0.2526211</span>  <span style="color:#ae81ff">1.00000000</span> <span style="color:#ae81ff">-0.3102336</span>
+ET  <span style="color:#ae81ff">0.52061208</span>  <span style="color:#ae81ff">0.66736606</span>  <span style="color:#ae81ff">0.7746636</span>  <span style="color:#ae81ff">0.8311721</span>  <span style="color:#ae81ff">0.7202350</span> <span style="color:#ae81ff">-0.31023357</span>  <span style="color:#ae81ff">1.0000000</span>
+
+
+<span style="color:#75715e">## best subset regression in R</span>
+<span style="color:#a6e22e">library</span>(leaps)
+X<span style="color:#f92672">=</span>FuelEff[,<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">7</span>]
+y<span style="color:#f92672">=</span>FuelEff[,<span style="color:#ae81ff">1</span>]
+out<span style="color:#f92672">=</span><span style="color:#a6e22e">summary</span>(<span style="color:#a6e22e">regsubsets</span>(X,y,nbest<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,nvmax<span style="color:#f92672">=</span><span style="color:#a6e22e">ncol</span>(X)))
+tab<span style="color:#f92672">=</span><span style="color:#a6e22e">cbind</span>(out<span style="color:#f92672">$</span>which,out<span style="color:#f92672">$</span>rsq,out<span style="color:#f92672">$</span>adjr2,out<span style="color:#f92672">$</span>cp)
+<span style="color:#a6e22e">tab
+</span><span style="color:#a6e22e">  </span>(Intercept) WT DIS NC HP ACC ET
+<span style="color:#ae81ff">1</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0.8579697</span> <span style="color:#ae81ff">0.8540244</span> <span style="color:#ae81ff">37.674750</span>
+<span style="color:#ae81ff">1</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0.7880098</span> <span style="color:#ae81ff">0.7821212</span> <span style="color:#ae81ff">72.979632</span>
+<span style="color:#ae81ff">2</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0.8926952</span> <span style="color:#ae81ff">0.8865635</span> <span style="color:#ae81ff">22.150747</span>
+<span style="color:#ae81ff">2</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">0.8751262</span> <span style="color:#ae81ff">0.8679906</span> <span style="color:#ae81ff">31.016828</span>
+<span style="color:#ae81ff">3</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">0.9145736</span> <span style="color:#ae81ff">0.9070360</span> <span style="color:#ae81ff">13.109930</span>
+<span style="color:#ae81ff">3</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0.9028083</span> <span style="color:#ae81ff">0.8942326</span> <span style="color:#ae81ff">19.047230</span>
+<span style="color:#ae81ff">4</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">0.9313442</span> <span style="color:#ae81ff">0.9230223</span>  <span style="color:#ae81ff">6.646728</span>
+<span style="color:#ae81ff">4</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">0.9204005</span> <span style="color:#ae81ff">0.9107520</span> <span style="color:#ae81ff">12.169443</span>
+<span style="color:#ae81ff">5</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">0.9337702</span> <span style="color:#ae81ff">0.9234218</span>  <span style="color:#ae81ff">7.422476</span>
+<span style="color:#ae81ff">5</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">0.9325494</span> <span style="color:#ae81ff">0.9220103</span>  <span style="color:#ae81ff">8.038535</span>
+<span style="color:#ae81ff">6</span>           <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">0.9385706</span> <span style="color:#ae81ff">0.9266810</span>  <span style="color:#ae81ff">7.000000</span>
+
+m2<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(GPM<span style="color:#f92672">~</span>WT,data<span style="color:#f92672">=</span>FuelEff)
+<span style="color:#a6e22e">summary</span>(m2)
+Call<span style="color:#f92672">:</span>
+<span style="color:#a6e22e">lm</span>(formula <span style="color:#f92672">=</span> GPM <span style="color:#f92672">~</span> WT, data <span style="color:#f92672">=</span> FuelEff)
+
+Residuals<span style="color:#f92672">:</span>
+     Min       <span style="color:#ae81ff">1</span>Q   Median       <span style="color:#ae81ff">3</span>Q      Max
+<span style="color:#ae81ff">-0.88072</span> <span style="color:#ae81ff">-0.29041</span>  <span style="color:#ae81ff">0.00659</span>  <span style="color:#ae81ff">0.19021</span>  <span style="color:#ae81ff">1.13164</span>
+
+Coefficients<span style="color:#f92672">:</span>
+             Estimate Std. Error t value <span style="color:#a6e22e">Pr</span>(<span style="color:#f92672">&amp;</span>gt;<span style="color:#f92672">|</span>t<span style="color:#f92672">|</span>)
+(Intercept) <span style="color:#ae81ff">-0.006101</span>   <span style="color:#ae81ff">0.302681</span>   <span style="color:#ae81ff">-0.02</span>    <span style="color:#ae81ff">0.984</span>
+WT           <span style="color:#ae81ff">1.514798</span>   <span style="color:#ae81ff">0.102721</span>   <span style="color:#ae81ff">14.75</span>   <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">2e-16</span> <span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>
+<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#f92672">-</span>
+Signif. codes<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0</span> ‘<span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.001</span> ‘<span style="color:#f92672">*</span><span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.01</span> ‘<span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.05</span> ‘.’ <span style="color:#ae81ff">0.1</span> ‘ ’ <span style="color:#ae81ff">1</span>
+
+Residual standard error<span style="color:#f92672">:</span> <span style="color:#ae81ff">0.4417</span> on <span style="color:#ae81ff">36</span> degrees of freedom
+Multiple R<span style="color:#f92672">-</span>squared<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0.858</span>, Adjusted R<span style="color:#f92672">-</span>squared<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0.854</span>
+F<span style="color:#f92672">-</span>statistic<span style="color:#f92672">:</span> <span style="color:#ae81ff">217.5</span> on <span style="color:#ae81ff">1</span> and <span style="color:#ae81ff">36</span> DF,  p<span style="color:#f92672">-</span>value<span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2.2e-16</span>
+
+</code></pre></div>
+    </div>
+
+    
+
+
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/regression-analysis/">Regression Analysis</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu7966823d6053eab1cc9400bf396c5251_310458_250x250_fill_lanczos_center_2.png" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Nam Le</a></h5>
+      <h6 class="card-subtitle">Risk and Asset Management Specialist for Buildings and Engineering Systems</h6>
+      <p class="card-text">My research interests include Operation Research and Applied Statistics for Asset Management of Buildings and Engineering Systems.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=yAnTwPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/namkyodai" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+    <div class="article-widget">
+      
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/post/2019-10-24-ra-price-2nd-toyota/" rel="next">Price of 2nd hand Toyota cars - Regression Analysis</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/post/2019-10-10-remove-space-in-bulk/" rel="prev">Removing Space of files inside folders/subfolders in bulk</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "namkyodainetlify" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://namkyodainetlify.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2019 Nam Le &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

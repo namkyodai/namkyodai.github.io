@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nam Le">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This is an example presented in the book “Data Mining and Business Analytics with R”, with some useful basic graphs that can be reused for other sets of similar data. Code and Data are saved in Github link
+store brand week logmove feat price AGE60 EDUC ETHNIC INCOME HHLARGE1 2 tropicana 40 9.018695 0 3.87 0.2328647 0.2489349 0.1142799 10.55321 0.10395342 2 tropicana 46 8.723231 0 3.87 0.2328647 0.2489349 0.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/2019-10-09-orange-juice/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.70ad938936228f620b2c68a380ab9522.css">
+
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/2019-10-09-orange-juice/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="">
+  <meta property="og:url" content="/post/2019-10-09-orange-juice/">
+  <meta property="og:title" content="Orange Juice | ">
+  <meta property="og:description" content="This is an example presented in the book “Data Mining and Business Analytics with R”, with some useful basic graphs that can be reused for other sets of similar data. Code and Data are saved in Github link
+store brand week logmove feat price AGE60 EDUC ETHNIC INCOME HHLARGE1 2 tropicana 40 9.018695 0 3.87 0.2328647 0.2489349 0.1142799 10.55321 0.10395342 2 tropicana 46 8.723231 0 3.87 0.2328647 0.2489349 0."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-10-09T23:30:45&#43;08:00">
+    
+    <meta property="article:modified_time" content="2019-10-09T23:30:45&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2019-10-09-orange-juice/"
+  },
+  "headline": "Orange Juice",
+  
+  "datePublished": "2019-10-09T23:30:45+08:00",
+  "dateModified": "2019-10-09T23:30:45+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Nam Le"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "This is an example presented in the book “Data Mining and Business Analytics with R”, with some useful basic graphs that can be reused for other sets of similar data. Code and Data are saved in Github link\nstore brand week logmove feat price AGE60 EDUC ETHNIC INCOME HHLARGE\r1 2 tropicana 40 9.018695 0 3.87 0.2328647 0.2489349 0.1142799 10.55321 0.1039534\r2 2 tropicana 46 8.723231 0 3.87 0.2328647 0.2489349 0."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Orange Juice | </title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Bio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/business/"><span>Business</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication/"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/library/"><span>Library</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/apps/"><span>Apps</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Orange Juice</h1>
+
+  
+  <p class="page-subtitle">Data Mining and Business Analytics with R</p>
+  
+
+  
+    
+
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 9, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2019-10-09-orange-juice/#disqus_thread"></a>
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/2019-10-09-orange-juice/&amp;text=Orange%20Juice" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/2019-10-09-orange-juice/&amp;t=Orange%20Juice" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Orange%20Juice&amp;body=/post/2019-10-09-orange-juice/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2019-10-09-orange-juice/&amp;title=Orange%20Juice" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Orange%20Juice%20/post/2019-10-09-orange-juice/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>This is an example presented in the book “Data Mining and Business Analytics with R”, with some useful basic graphs that can be reused for other sets of similar data. Code and Data are saved in <a href="https://github.com/namkyodai/BusinessAnalytics/tree/master/orangejuice">Github link</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">store     brand week   logmove feat price     AGE60      EDUC    ETHNIC   INCOME   HHLARGE
+<span style="color:#ae81ff">1</span>      <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">40</span>  <span style="color:#ae81ff">9.018695</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.87</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">2</span>      <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">46</span>  <span style="color:#ae81ff">8.723231</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.87</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">3</span>      <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">47</span>  <span style="color:#ae81ff">8.253228</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.87</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">4</span>      <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">48</span>  <span style="color:#ae81ff">8.987197</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.87</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">5</span>      <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">50</span>  <span style="color:#ae81ff">9.093357</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.87</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">6</span>      <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">51</span>  <span style="color:#ae81ff">8.877382</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.87</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">7</span>      <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">52</span>  <span style="color:#ae81ff">9.294682</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.29</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">8</span>      <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">53</span>  <span style="color:#ae81ff">8.954674</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.29</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">9</span>      <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">54</span>  <span style="color:#ae81ff">9.049232</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.29</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">10</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">57</span>  <span style="color:#ae81ff">8.613230</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.29</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">11</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">58</span>  <span style="color:#ae81ff">8.680672</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.56</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">12</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">59</span>  <span style="color:#ae81ff">9.034080</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.56</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">13</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">60</span>  <span style="color:#ae81ff">8.691483</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.56</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">14</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">61</span>  <span style="color:#ae81ff">8.831712</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.56</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">15</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">62</span>  <span style="color:#ae81ff">9.128696</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.87</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">16</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">63</span>  <span style="color:#ae81ff">9.405907</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">2.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">17</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">64</span>  <span style="color:#ae81ff">9.447150</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">2.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">18</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">65</span>  <span style="color:#ae81ff">8.783856</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">19</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">66</span>  <span style="color:#ae81ff">8.723231</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">20</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">67</span>  <span style="color:#ae81ff">9.957976</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">2.39</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">21</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">68</span>  <span style="color:#ae81ff">9.426741</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">2.39</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">22</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">69</span>  <span style="color:#ae81ff">9.156095</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">23</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">70</span>  <span style="color:#ae81ff">9.793673</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">2.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">24</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">71</span>  <span style="color:#ae81ff">9.149316</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">2.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">25</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">72</span>  <span style="color:#ae81ff">8.743851</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">26</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">73</span>  <span style="color:#ae81ff">8.841014</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">27</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">74</span>  <span style="color:#ae81ff">9.727228</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">2.49</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">28</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">75</span>  <span style="color:#ae81ff">8.743851</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">29</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">76</span>  <span style="color:#ae81ff">8.979165</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">30</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">77</span>  <span style="color:#ae81ff">8.723231</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">31</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">78</span>  <span style="color:#ae81ff">8.979165</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">32</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">79</span>  <span style="color:#ae81ff">8.962904</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">33</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">80</span>  <span style="color:#ae81ff">8.712760</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">34</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">81</span> <span style="color:#ae81ff">10.649607</span>    <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1.69</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">35</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">82</span>  <span style="color:#ae81ff">8.502689</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">36</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">83</span> <span style="color:#ae81ff">10.292281</span>    <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">37</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">84</span>  <span style="color:#ae81ff">9.208739</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">38</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">85</span> <span style="color:#ae81ff">10.468801</span>    <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">39</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">86</span> <span style="color:#ae81ff">10.083139</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">40</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">87</span>  <span style="color:#ae81ff">8.868413</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">41</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">88</span> <span style="color:#ae81ff">10.106918</span>    <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">2.29</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">42</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">89</span>  <span style="color:#ae81ff">8.754003</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">43</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">90</span>  <span style="color:#ae81ff">8.712760</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">44</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">91</span> <span style="color:#ae81ff">10.420375</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">45</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">92</span>  <span style="color:#ae81ff">9.491602</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">46</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">93</span>  <span style="color:#ae81ff">8.733594</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">47</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">94</span>  <span style="color:#ae81ff">9.270871</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">48</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">95</span> <span style="color:#ae81ff">10.707102</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">49</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">97</span>  <span style="color:#ae81ff">9.908276</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">50</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">98</span>  <span style="color:#ae81ff">9.121728</span>    <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">51</span>     <span style="color:#ae81ff">2</span> tropicana   <span style="color:#ae81ff">99</span>  <span style="color:#ae81ff">9.996614</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">2.19</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">52</span>     <span style="color:#ae81ff">2</span> tropicana  <span style="color:#ae81ff">100</span>  <span style="color:#ae81ff">9.515469</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">2.19</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">53</span>     <span style="color:#ae81ff">2</span> tropicana  <span style="color:#ae81ff">103</span>  <span style="color:#ae81ff">8.333270</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">54</span>     <span style="color:#ae81ff">2</span> tropicana  <span style="color:#ae81ff">104</span> <span style="color:#ae81ff">10.582130</span>    <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1.99</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">55</span>     <span style="color:#ae81ff">2</span> tropicana  <span style="color:#ae81ff">105</span>  <span style="color:#ae81ff">8.636220</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.59</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">56</span>     <span style="color:#ae81ff">2</span> tropicana  <span style="color:#ae81ff">106</span>  <span style="color:#ae81ff">9.107643</span>    <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">2.68</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">57</span>     <span style="color:#ae81ff">2</span> tropicana  <span style="color:#ae81ff">107</span>  <span style="color:#ae81ff">8.702178</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.44</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+<span style="color:#ae81ff">58</span>     <span style="color:#ae81ff">2</span> tropicana  <span style="color:#ae81ff">108</span>  <span style="color:#ae81ff">8.954674</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">3.14</span> <span style="color:#ae81ff">0.2328647</span> <span style="color:#ae81ff">0.2489349</span> <span style="color:#ae81ff">0.1142799</span> <span style="color:#ae81ff">10.55321</span> <span style="color:#ae81ff">0.1039534</span>
+     WORKWOM   HVAL150 SSTRDIST  SSTRVOL CPDIST5   CPWVOL5
+<span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">2</span>  <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">5</span>  <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">7</span>  <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">8</span>  <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">9</span>  <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">10</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">11</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">12</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">13</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">14</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">15</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">16</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">17</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">18</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">19</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">20</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">21</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">22</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">23</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">24</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">25</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">26</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">27</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">28</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">29</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">30</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">31</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">32</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">33</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">34</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">35</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">36</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">37</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">38</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">39</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">40</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">41</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">42</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">43</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">44</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">45</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">46</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">47</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">48</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">49</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">50</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">51</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">52</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">53</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">54</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">55</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">56</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">57</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+<span style="color:#ae81ff">58</span> <span style="color:#ae81ff">0.3035853</span> <span style="color:#ae81ff">0.4638871</span> <span style="color:#ae81ff">2.110122</span> <span style="color:#ae81ff">1.142857</span> <span style="color:#ae81ff">1.92728</span> <span style="color:#ae81ff">0.3769266</span>
+ [ reached <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">max&#39;</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">getOption</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">max.print&#34;</span>) <span style="color:#f92672">-</span><span style="color:#f92672">-</span> omitted <span style="color:#ae81ff">28889</span> rows ]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">## Install packages from CRAN; use any USA mirror</span>
+<span style="color:#a6e22e">library</span>(lattice)
+<span style="color:#75715e">#oj &lt;- read.csv(&#34;https://www.biz.uiowa.edu/faculty/jledolter/DataMining/oj.csv&#34;)</span>
+oj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">oj.csv&#34;</span>)
+oj<span style="color:#f92672">$</span>store <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">factor</span>(oj<span style="color:#f92672">$</span>store) <span style="color:#75715e">#change numberic value of store into categorical data</span>
+oj[1<span style="color:#f92672">:</span><span style="color:#ae81ff">2</span>,]
+t1<span style="color:#f92672">=</span><span style="color:#a6e22e">tapply</span>(oj<span style="color:#f92672">$</span>logmove,oj<span style="color:#f92672">$</span>brand,FUN<span style="color:#f92672">=</span>mean,na.rm<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>) <span style="color:#75715e">#calculate the mean of each brand using logmove value.</span>
+t1
+t2<span style="color:#f92672">=</span><span style="color:#a6e22e">tapply</span>(oj<span style="color:#f92672">$</span>logmove,INDEX<span style="color:#f92672">=</span><span style="color:#a6e22e">list</span>(oj<span style="color:#f92672">$</span>brand,oj<span style="color:#f92672">$</span>week),FUN<span style="color:#f92672">=</span>mean,na.rm<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>) <span style="color:#75715e">#calculate the mean of logmove value based on index lists per week.</span>
+t2
+<span style="color:#75715e">#plot each graph as time serieas data per week.</span>
+<span style="color:#a6e22e">plot.new</span>()
+<span style="color:#a6e22e">par</span>(mar<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">4.5</span>,<span style="color:#ae81ff">4.3</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)<span style="color:#ae81ff">+0.1</span>,mfrow<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>),bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">white&#34;</span>,cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, cex.main <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.6</span>)
+<span style="color:#a6e22e">plot</span>(t2[1,],type<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">l&#34;</span>,xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">week&#34;</span>,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">dominicks&#34;</span>,ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">12</span>),cex.axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,las <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+<span style="color:#a6e22e">plot</span>(t2[2,],type<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">l&#34;</span>,xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">week&#34;</span>,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">minute.maid&#34;</span>,ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">12</span>),cex.axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,las <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+<span style="color:#a6e22e">plot</span>(t2[3,],type<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">l&#34;</span>,xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">week&#34;</span>,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">tropicana&#34;</span>,ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">12</span>),cex.axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,las <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_weekmean01.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1600</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">600</span>)
+<span style="color:#a6e22e">dev.off</span>()
+<span style="color:#75715e">#-------------------------------</span>
+<span style="color:#75715e">#now we combine the three above graphs into one single graphs for ease of comparison</span>
+logmove<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(t2[1,],t2[2,],t2[3,])
+week1<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">40</span><span style="color:#f92672">:</span><span style="color:#ae81ff">160</span>)
+week<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(week1,week1,week1)
+brand1<span style="color:#f92672">=</span><span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">121</span>)
+brand2<span style="color:#f92672">=</span><span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">121</span>)
+brand3<span style="color:#f92672">=</span><span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">121</span>)
+brand<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(brand1,brand2,brand3)
+<span style="color:#a6e22e">plot.new</span>()
+<span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>week<span style="color:#f92672">|</span><span style="color:#a6e22e">factor</span>(brand),type<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">l&#34;</span>,layout<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>),col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">black&#34;</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_weekmean02.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">600</span>)
+<span style="color:#a6e22e">dev.off</span>()
+<span style="color:#75715e">#-----------------------------</span>
+<span style="color:#a6e22e">plot.new</span>()
+<span style="color:#a6e22e">par</span>(mfrow<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>))
+<span style="color:#75715e">#par(mar=c(4.5,4.3,1,1)+0.1,mfrow=c(2,2),bg=&#34;white&#34;,cex = 1, cex.main = 0.6)</span>
+<span style="color:#a6e22e">boxplot</span>(logmove<span style="color:#f92672">~</span>brand,data<span style="color:#f92672">=</span>oj) <span style="color:#75715e"># compare logmove of 3 branch using boxplot</span>
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovebrandboxplot.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">600</span>)
+<span style="color:#a6e22e">dev.off</span>()
+<span style="color:#a6e22e">histogram</span>(<span style="color:#f92672">~</span>logmove<span style="color:#f92672">|</span>brand,data<span style="color:#f92672">=</span>oj,layout<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>)) <span style="color:#75715e"># compare logmove of 3 branch using histogram</span>
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovebrandhist.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">600</span>)
+<span style="color:#a6e22e">dev.off</span>()
+a1<span style="color:#f92672">=</span><span style="color:#a6e22e">densityplot</span>(<span style="color:#f92672">~</span>logmove<span style="color:#f92672">|</span>brand,data<span style="color:#f92672">=</span>oj,layout<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>),plot.points<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>) <span style="color:#75715e"># compare logmove of 3 branch using density plot</span>
+a2<span style="color:#f92672">=</span><span style="color:#a6e22e">densityplot</span>(<span style="color:#f92672">~</span>logmove,groups<span style="color:#f92672">=</span>brand,data<span style="color:#f92672">=</span>oj,plot.points<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>) <span style="color:#75715e">## compare logmove of 3 branch using density plot in a one frame</span>
+<span style="color:#75715e">#using xyplot to see the spartial distribution of data weekly</span>
+<span style="color:#a6e22e">library</span>(gridExtra) <span style="color:#75715e">#this package allows to plot multiple graphs in the same plot despite the difference in plotting engines (e.g. ggplot or barchart)</span>
+<span style="color:#a6e22e">grid.arrange</span>(a1, a2,  ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>) <span style="color:#75715e">#display the two plot a and p</span>
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovedensity.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#75715e">#-------------------------------------------------</span>
+<span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>week,data<span style="color:#f92672">=</span>oj,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">black&#34;</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmoveweekspartial.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#75715e">#---------------------------------</span>
+<span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>week<span style="color:#f92672">|</span>brand,data<span style="color:#f92672">=</span>oj,layout<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>),col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">black&#34;</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmoveweekspartialbrand.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#75715e">#---------------------------------</span>
+<span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>price,data<span style="color:#f92672">=</span>oj,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">black&#34;</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmoveprice.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#75715e">#---------------------------------</span>
+<span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>price<span style="color:#f92672">|</span>brand,data<span style="color:#f92672">=</span>oj,layout<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>),col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">black&#34;</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovepricebrand.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#75715e">#---------------------------------</span>
+<span style="color:#a6e22e">smoothScatter</span>(oj<span style="color:#f92672">$</span>price,oj<span style="color:#f92672">$</span>logmove)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovepricesmooth.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+<span style="color:#75715e">#---------------------------------</span>
+a1<span style="color:#f92672">=</span><span style="color:#a6e22e">densityplot</span>(<span style="color:#f92672">~</span>logmove,groups<span style="color:#f92672">=</span>feat, data<span style="color:#f92672">=</span>oj, plot.points<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
+a2<span style="color:#f92672">=</span><span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>price,groups<span style="color:#f92672">=</span>feat, data<span style="color:#f92672">=</span>oj)
+<span style="color:#a6e22e">grid.arrange</span>(a1, a2,  ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>) <span style="color:#75715e">#display the two plot a and p</span>
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovepricegroupfeat.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1200</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#75715e">#------------------------------------------------</span>
+oj1<span style="color:#f92672">=</span>oj[oj<span style="color:#f92672">$</span>store <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>,]
+<span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>week<span style="color:#f92672">|</span>brand,data<span style="color:#f92672">=</span>oj1,type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">l&#34;</span>,layout<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>),col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">black&#34;</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovebrand.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1200</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>price,data<span style="color:#f92672">=</span>oj1,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">black&#34;</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovepricexyplot.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+
+<span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>price<span style="color:#f92672">|</span>brand,data<span style="color:#f92672">=</span>oj1,layout<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>),col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">black&#34;</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovepricebrandxyplot.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#a6e22e">densityplot</span>(<span style="color:#f92672">~</span>logmove<span style="color:#f92672">|</span>brand,groups<span style="color:#f92672">=</span>feat,data<span style="color:#f92672">=</span>oj1,plot.points<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovebranddenst.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1200</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>price<span style="color:#f92672">|</span>brand,groups<span style="color:#f92672">=</span>feat,data<span style="color:#f92672">=</span>oj1)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovepricebrandxyplot.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1200</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#75715e">#----------------------------</span>
+t21<span style="color:#f92672">=</span><span style="color:#a6e22e">tapply</span>(oj<span style="color:#f92672">$</span>INCOME,oj<span style="color:#f92672">$</span>store,FUN<span style="color:#f92672">=</span>mean,na.rm<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+t21
+t21[t21<span style="color:#f92672">==</span><span style="color:#a6e22e">max</span>(t21)]
+t21[t21<span style="color:#f92672">==</span><span style="color:#a6e22e">min</span>(t21)]
+
+oj1<span style="color:#f92672">=</span>oj[oj<span style="color:#f92672">$</span>store <span style="color:#f92672">==</span> <span style="color:#ae81ff">62</span>,]
+oj2<span style="color:#f92672">=</span>oj[oj<span style="color:#f92672">$</span>store <span style="color:#f92672">==</span> <span style="color:#ae81ff">75</span>,]
+oj3<span style="color:#f92672">=</span><span style="color:#a6e22e">rbind</span>(oj1,oj2)
+
+<span style="color:#75715e">#----------------------------------------</span>
+a1<span style="color:#f92672">=</span><span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>price<span style="color:#f92672">|</span>store,data<span style="color:#f92672">=</span>oj3)
+a2<span style="color:#f92672">=</span><span style="color:#a6e22e">xyplot</span>(logmove<span style="color:#f92672">~</span>price<span style="color:#f92672">|</span>store,groups<span style="color:#f92672">=</span>feat,data<span style="color:#f92672">=</span>oj3)
+<span style="color:#a6e22e">grid.arrange</span>(a1, a2,  ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) <span style="color:#75715e">#display the two plot a and p</span>
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovexyplotprice.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>)
+<span style="color:#a6e22e">dev.off</span>()
+
+<span style="color:#75715e">## store in the wealthiest neighborhood</span>
+<span style="color:#a6e22e">plot.new</span>()
+<span style="color:#a6e22e">par</span>(mar<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)<span style="color:#ae81ff">+0.1</span>,mfrow<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>),bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">white&#34;</span>,cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, cex.main <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+mhigh<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(logmove<span style="color:#f92672">~</span>price,data<span style="color:#f92672">=</span>oj1)
+<span style="color:#a6e22e">summary</span>(mhigh)
+<span style="color:#a6e22e">plot</span>(logmove<span style="color:#f92672">~</span>price,data<span style="color:#f92672">=</span>oj1,xlim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>),ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">13</span>), main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">62 = wealthiest store&#34;</span>)
+<span style="color:#a6e22e">abline</span>(mhigh)
+<span style="color:#75715e">## store in the poorest neighborhood</span>
+mlow<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(logmove<span style="color:#f92672">~</span>price,data<span style="color:#f92672">=</span>oj2)
+<span style="color:#a6e22e">summary</span>(mlow)
+<span style="color:#a6e22e">plot</span>(logmove<span style="color:#f92672">~</span>price,data<span style="color:#f92672">=</span>oj2,xlim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>),ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">13</span>), main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">75 = poorest store&#34;</span>)
+<span style="color:#a6e22e">abline</span>(mlow)
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">oj_logmovepriceoj2.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+<span style="color:#a6e22e">dev.off</span>()
+</code></pre></div><h1 id="graphs">Graphs</h1>
+<p>Mean of logmove over 121 weeks</p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_weekmean01.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_weekmean02.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p>boxplot</p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovebrandboxplot.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovebrandhist.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovedensity.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmoveweekspartial.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmoveweekspartialbrand.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmoveprice.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovebrand.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovepricebrand.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovepricesmooth.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovepricegroupfeat.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovebranddenst.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovepricebrandxyplot.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovepricexyplot.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovexyplotprice.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/orangejuice/oj_logmovepriceoj2.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p>The last two graphs also present the regression lines with summary of coefficients using lm function</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mhigh<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(logmove<span style="color:#f92672">~</span>price,data<span style="color:#f92672">=</span>oj1)
+<span style="color:#a6e22e">summary</span>(mhigh)
+
+Call<span style="color:#f92672">:</span>
+<span style="color:#a6e22e">lm</span>(formula <span style="color:#f92672">=</span> logmove <span style="color:#f92672">~</span> price, data <span style="color:#f92672">=</span> oj1)
+
+Residuals<span style="color:#f92672">:</span>
+    Min      <span style="color:#ae81ff">1</span>Q  Median      <span style="color:#ae81ff">3</span>Q     Max
+<span style="color:#ae81ff">-4.9557</span> <span style="color:#ae81ff">-0.4934</span>  <span style="color:#ae81ff">0.1815</span>  <span style="color:#ae81ff">0.6557</span>  <span style="color:#ae81ff">2.4454</span>
+
+Coefficients<span style="color:#f92672">:</span>
+            Estimate Std. Error t value <span style="color:#a6e22e">Pr</span>(<span style="color:#f92672">&amp;</span>gt;<span style="color:#f92672">|</span>t<span style="color:#f92672">|</span>)
+(Intercept)  <span style="color:#ae81ff">9.15394</span>    <span style="color:#ae81ff">0.21112</span>  <span style="color:#ae81ff">43.359</span>   <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">2e-16</span> <span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>
+price       <span style="color:#ae81ff">-0.01461</span>    <span style="color:#ae81ff">0.08381</span>  <span style="color:#ae81ff">-0.174</span>    <span style="color:#ae81ff">0.862</span>
+<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#f92672">-</span>
+Signif. codes<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0</span> ‘<span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.001</span> ‘<span style="color:#f92672">*</span><span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.01</span> ‘<span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.05</span> ‘.’ <span style="color:#ae81ff">0.1</span> ‘ ’ <span style="color:#ae81ff">1</span>
+
+Residual standard error<span style="color:#f92672">:</span> <span style="color:#ae81ff">1.142</span> on <span style="color:#ae81ff">349</span> degrees of freedom
+Multiple R<span style="color:#f92672">-</span>squared<span style="color:#f92672">:</span>  <span style="color:#ae81ff">8.712e-05</span>, Adjusted R<span style="color:#f92672">-</span>squared<span style="color:#f92672">:</span>  <span style="color:#ae81ff">-0.002778</span>
+F<span style="color:#f92672">-</span>statistic<span style="color:#f92672">:</span> <span style="color:#ae81ff">0.03041</span> on <span style="color:#ae81ff">1</span> and <span style="color:#ae81ff">349</span> DF,  p<span style="color:#f92672">-</span>value<span style="color:#f92672">:</span> <span style="color:#ae81ff">0.8617</span>
+
+
+mlow<span style="color:#f92672">=</span><span style="color:#a6e22e">lm</span>(logmove<span style="color:#f92672">~</span>price,data<span style="color:#f92672">=</span>oj2)
+<span style="color:#a6e22e">summary</span>(mlow)
+
+Call<span style="color:#f92672">:</span>
+<span style="color:#a6e22e">lm</span>(formula <span style="color:#f92672">=</span> logmove <span style="color:#f92672">~</span> price, data <span style="color:#f92672">=</span> oj2)
+
+Residuals<span style="color:#f92672">:</span>
+    Min      <span style="color:#ae81ff">1</span>Q  Median      <span style="color:#ae81ff">3</span>Q     Max
+<span style="color:#ae81ff">-3.5235</span> <span style="color:#ae81ff">-0.5606</span>  <span style="color:#ae81ff">0.0392</span>  <span style="color:#ae81ff">0.5090</span>  <span style="color:#ae81ff">2.4523</span>
+
+Coefficients<span style="color:#f92672">:</span>
+            Estimate Std. Error t value <span style="color:#a6e22e">Pr</span>(<span style="color:#f92672">&amp;</span>gt;<span style="color:#f92672">|</span>t<span style="color:#f92672">|</span>)
+(Intercept) <span style="color:#ae81ff">10.87695</span>    <span style="color:#ae81ff">0.15184</span>   <span style="color:#ae81ff">71.63</span>   <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">2e-16</span> <span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>
+price       <span style="color:#ae81ff">-0.67222</span>    <span style="color:#ae81ff">0.06071</span>  <span style="color:#ae81ff">-11.07</span>   <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">2e-16</span> <span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>
+<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#f92672">-</span>
+Signif. codes<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0</span> ‘<span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.001</span> ‘<span style="color:#f92672">*</span><span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.01</span> ‘<span style="color:#f92672">*</span>’ <span style="color:#ae81ff">0.05</span> ‘.’ <span style="color:#ae81ff">0.1</span> ‘ ’ <span style="color:#ae81ff">1</span>
+
+Residual standard error<span style="color:#f92672">:</span> <span style="color:#ae81ff">0.8383</span> on <span style="color:#ae81ff">352</span> degrees of freedom
+Multiple R<span style="color:#f92672">-</span>squared<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0.2584</span>,    Adjusted R<span style="color:#f92672">-</span>squared<span style="color:#f92672">:</span>  <span style="color:#ae81ff">0.2563</span>
+F<span style="color:#f92672">-</span>statistic<span style="color:#f92672">:</span> <span style="color:#ae81ff">122.6</span> on <span style="color:#ae81ff">1</span> and <span style="color:#ae81ff">352</span> DF,  p<span style="color:#f92672">-</span>value<span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2.2e-16</span>
+</code></pre></div>
+    </div>
+
+    
+
+
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/r/">R</a>
+  
+  <a class="badge badge-light" href="/tags/plot/">Plot</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu7966823d6053eab1cc9400bf396c5251_310458_250x250_fill_lanczos_center_2.png" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Nam Le</a></h5>
+      <h6 class="card-subtitle">Risk and Asset Management Specialist for Buildings and Engineering Systems</h6>
+      <p class="card-text">My research interests include Operation Research and Applied Statistics for Asset Management of Buildings and Engineering Systems.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=yAnTwPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/namkyodai" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/post/2019-10-08-alumni-contribution/">Alumni Contributions</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+    <div class="article-widget">
+      
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/post/2019-10-10-remove-space-in-bulk/" rel="next">Removing Space of files inside folders/subfolders in bulk</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/post/2019-10-08-alumni-contribution/" rel="prev">Alumni Contributions</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "namkyodainetlify" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://namkyodainetlify.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2019 Nam Le &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
