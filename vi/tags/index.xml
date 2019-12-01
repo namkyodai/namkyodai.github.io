@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags | </title>
+    <title>Tags | Nam&#39;s blog</title>
     <link>/vi/tags/</link>
       <atom:link href="/vi/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Tue, 05 Nov 2019 20:16:35 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sat, 30 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/vi/tags/</link>
     </image>
+    
+    <item>
+      <title>Châm Ngôn</title>
+      <link>/vi/tags/cham-ngon/</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/cham-ngon/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Phật Giáo</title>
