@@ -113,21 +113,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/tdd/</loc>
-    <lastmod>2020-07-20T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/tdd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/tdd/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/tdd/</loc>
     <lastmod>2020-07-20T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -139,6 +124,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/tdd/</loc>
+    <lastmod>2020-07-20T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/tdd/"
                 />
   </url>
   
